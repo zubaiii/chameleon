@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/chamlogo.png" type="image/x-icon">
+    <title>Contact-Chameleon</title>
+    <link href="../css/pages.css" rel="stylesheet" />
+    <link href="../css/media.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+
+    <header class="header">
+        <a href="../index.html">
+            <img src="../images/logo.png" alt="">
+        </a>
+
+        <p class="menu-icon"><i class="fa-solid fa-bars"></i></p>
+        <nav class="nav">
+            <p class="close-icon"><i class="fa-solid fa-close"></i></p>
+            <a href="index.html">
+                <img src="../images/logo.png" alt="">
+            </a>
+
+            <ul>
+                <li class="li1"><a href="../index.html">Home</a></li>
+                <li class="li1"><a href="portfolio.html">Portfolio</a></li>
+                <li class="li2"><a href="about.html">About</a></li>
+                <li class="li3"><a href="./contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="prot-sec1">
+        <h1 style="font-size: 50px;" class="con-h1">Do You Have a <br> Project <br> Coming up? </h1>
+
+        <div class="contact">
+            <h4>Contact Us</h4>
+            <form id="contactForm">
+               <div class="span-div">
+                <span>*</span>
+               </div>
+                <input name="name" autocomplete="off" id="name" type="text" placeholder="Your Name" required>
+                <div class="span-div">
+                    <span>*</span>
+                   </div>
+                <input name='email' autocomplete="off" id="email" type="email" placeholder="Your Email" required>
+                <div class="span-div">
+                    <span>*</span>
+                   </div>
+                <input name="number" autocomplete="off" id="phone" type="number" placeholder="Your Number" required>
+                <div class="span-div">
+                    <span>*</span>
+                   </div>
+                <select name="select" id="select" class="selct" required>
+                    <option value="Select Categories">Select Categories</option>
+                    <option name="Individual" value="Individual">Individual</option>
+                    <option name="Company" value="Company">Company</option>
+                </select>
+                <div class="span-div">
+                    <span>*</span>
+                   </div>
+                <textarea id="message" autocomplete="off" name="Mesege" placeholder="Let's Create Together! Share Your Ideas and Inquiries" rows="6" required></textarea>
+               
+                <div id="error-message" style="color: red; margin-top: 10px;"></div>
+                <p class="loader">Sending...</p>
+
+                <button id="subBtn" onclick="submitForm()" type="button" class=" sub-btn">Submit</button>
+            </form>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+  <!-- ------- Footer  -->
+  <footer class="footer">
+    <div class="main-footer">
+        <div class="details">
+           
+            <h5 class="detail-h5">Enquiries</h5>
+
+            <div>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+92511231212">+92 51 123 1212</a>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@thechameleons.co">info@thechameleons.co</a>
+            </div>
+            <h5 class="detail-h5">Address</h5>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Office 4019, 4th Floor, World Trade Center, DHA 2, Islamabad, Pakistan.</p>
+            </div>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>5117 JOSEPH ST LEWISVILLE, TX 75056, USA</p>
+            </div>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Augustine Heights Queenland, 4300, Australia.</p>
+            </div>
+        </div>
+
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/thechameleons.co"><i class="fa-brands fa-square-facebook"></i></a>
+
+            <a href="https://www.linkedin.com/showcase/thechameleons-co"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/thechameleons.co/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.youtube.com/@thechameleons-co"><i class="fa-brands fa-square-youtube"></i></a>
+            <a href="https://www.behance.net/chameleons_"><i class="fa-brands fa-square-behance"></i></i></a>
+        </div>
+    </div>
+    <div style="position: relative;">
+
+        <h1 >CHAMELEONS</h1>
+        <img class="start-staker" src="../images/staricon.png" alt="">
+    </div>
+  </footer>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../Javascript/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<link href=" https://cdn.jsdelivr.net/npm/sweetalert2@11.10.2/dist/sweetalert2.min.css " rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <script>
+
+        var submitForm = (() =>  {
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var phone = $('#phone').val();
+            var message = $('#message').val();
+            var message = $('#message').val();
+            var select = $('#select').val();
+
+            $('.loader').show();
+
+            // Clear previous error messages
+            $('#error-message').text('');
+            $('#success-message').text('');
+
+            // Basic validation
+            if (name === '' || email === '' || phone === '' || message === '' || select === 'Select Categories') {
+               
+                Swal.fire({
+                            title: "OOPS",
+                            text:  "All fields are required.",
+                            icon: "error"
+                        });
+                        $('.loader').hide();
+                
+                return;
+            }
+
+            // Validate phone number
+            var phoneRegex = /^[0-9]{11}$/;
+            if (!phoneRegex.test(phone)) {
+                
+                Swal.fire({
+                            title: "OPPS",
+                            text: " Please enter a 11-digit number.",
+                            icon: "error"
+                        });
+                        $('.loader').hide();
+                return;
+            }
+
+            var formData = $('#contactForm').serialize();
+
+            $.ajax({
+                type: 'POST',
+                url: './contact.php',
+                data: formData,
+                success: function (response) {
+                    $('.loader').hide();
+                    if (response.startsWith('Error:')) {
+                        Swal.fire({
+                            title: "OOPS",
+                            text: "Error during sending!",
+                            icon: "error"
+                        });
+                    } else {
+                        if(response !== ""){
+                            Swal.fire({
+                                title: "Good job!",
+                                text: "Thank you for your message! We will get back to you soon.",
+                                icon: "success"
+                            });
+                            $('#contactForm')[0].reset();
+                        }
+                    }
+                }
+            });
+        })
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
